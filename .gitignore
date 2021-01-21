@@ -1,0 +1,10 @@
+/.metadata/
+*.class
+/.settings/
+/.bin/
+/.classpath/
+.project
+/.project/
+*.project
+*.classpath
+/src/excecao
