@@ -7,4 +7,5 @@
 /.project
 *.project
 *.classpath
-/src/excecao
+/src/excecaobin
+/bin/
