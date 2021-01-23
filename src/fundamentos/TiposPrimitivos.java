@@ -33,6 +33,5 @@ public class TiposPrimitivos {
 		System.out.println(id + ": ganha -> " + salario);
 		System.out.println("Férias? " + estaDeFerias);
 		System.out.println("Status: " + status);
-		
 	}
 }
