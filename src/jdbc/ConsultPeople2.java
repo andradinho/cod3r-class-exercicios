@@ -13,15 +13,14 @@ public class ConsultPeople2 {
 	public static void main(String[] args) throws SQLException {
 		Scanner input = new Scanner(System.in);
 		
+		Connection connection = ConnectionFactory.getConnection();
+		String sql = "SELECT * FROM people WHERE name LIKE ?";
+
 		System.out.println("Dado da busca: ");
 		String data = input.nextLine();
-		
-		Connection connection = ConnectionFactory.getConnection();
-		
-		String sql = "SELECT * FROM people WHERE name LIKE ?";
+
 		PreparedStatement stmt = connection.prepareStatement(sql);
 		stmt.setString(1, '%' + data + '%');
-		System.out.println(stmt);
 		ResultSet result = stmt.executeQuery();
 		
 		List<Person> people = new ArrayList<>();
