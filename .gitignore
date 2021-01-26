@@ -10,4 +10,4 @@
 /bin/
 ConnectionTest.java
 DataBaseCreate.java
-ConnectionFactory.java
+connection.properties
